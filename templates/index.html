@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+ <!-- Home section design -->
+ <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Shailesh Pandit</h1>
+        <h3>And I'm a <span> Python Web Devloper</span></h3>
+        <p>
+            <span>Aspiring</span> Technical Python, Web and Rest API Developer | <span>Seeking</span> An Entry-Level Developer Position | 👨🏻‍💻 <span>Proficiency</span> With Linux, Python, Django, Rest APIs, Git and GitHub.
+        </p>
+        <!-- Social media icons -->
+        <div class="social-media">
+            <a href="">
+                <img src="{% static 'icons/twitter.svg' %}" class="logo" name="twitter">
+            </a>
+            <a href="https://instagram.com/panditjee__?igshid=ZDdkNTZiNTM=">
+                <img src="{% static 'icons/instagram-alt.svg' %}" class="logo" name="instagram-alt">
+            </a>
+            <a href="https://www.linkedin.com/in/shaileshpandit141">
+                <img src="{% static 'icons/linkedin.svg' %}" class="logo" name="linkedin">
+            </a>
+            <a href="https://github.com/shaileshpandit141">
+                <img src="{% static 'icons/github.svg' %}" class="logo" name="github">
+        </div>
+        <a href="" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="{% static 'images/bgimg.png' %}" alt="" />
+    </div>
+</section>
+
+<!-- About section design -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="{% static 'images/bgimg.png' %}" alt="" />
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+            Hi there, I'm SHAILESH, an aspiring Python web developer seeking job opportunities in the field. I have a strong passion for programming and I am dedicated to building my skills and knowledge in Python web development. I am proficient in web development frameworks such as a Django, and I am familiar with various technologies such as HTML, CSS, JavaScript PostgreSQL, GIT, and Linux. I am a problem-solver at heart and enjoy collaborating with others to develop innovative web solutions. I am committed to ongoing learning and development, and I believe that with the right opportunity, I can make a positive impact as a Python web developer.
+        </p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+<!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading">Our<span>Services</span></h2>
+    <div class="services-continer">
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/code-alt.svg' %}" alt="">
+            <h3>Web Devloper!</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/bxs-paint.svg' %}" alt="">
+            <h3>Graphic Design</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/bx-bar-chart-alt.svg' %}" alt="">
+            <h3>Digial Markating</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Portfolio design -->
+<section class="portfolio " id="portfolio">
+    <h2 class="heading"> Latest <span>project</span></h2>
+    <div class="portfolio-continer">
+        
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/1.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Clone YouTube.com 2023</h4>
+                <p>Check out my latest project: Cloning YouTube.com with HTML and CSS!.</p>
+                <a href="https://shaileshpandit141.github.io/Clone-YouTube.com-2023/">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/2.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Python Assignments Mastered</h4>
+                <p>Python Assignments Mastered: Check out Our Completed Assignments Uploaded on GitHub!.</p>
+                <a href="https://github.com/shaileshpandit141/Python-Assignments-Mastered">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/3.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Python Exercises 2023</h4>
+                <p>Check out my latest python exercises repository.</p>
+                <a href="https://github.com/shaileshpandit141/PythonExercises2023">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/4.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Define Variable in Python</h4>
+                <p>How to define variable in python? | page design by using HTML and CSS.</p>
+                <a href="https://github.com/shaileshpandit141/define-variable-in-python">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/5.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Login-page</h4>
+                <p>It is an efficiently designed and responsive login page in #HTML and #CSS.</p>
+                <a href="https://github.com/shaileshpandit141/Login-page">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/6.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact setion design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="" method='post'>
+        {% csrf_token %}
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" name='fname'>
+            <input type="email" placeholder="Email Address" name='email'>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number" name='number'>
+            <input type="text" placeholder="Subject" name='subject'>
+        </div>
+        <textarea id="" cols="30" rows="10" placeholder="Your Message" name='message'></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+</head>
+<body>
+    <!-- Header design -->
+    <header class="header">
+        <a href="/" class="logo">Portfolio</a>
+        <!-- <img src="{% static 'icons/menu.svg' %}" alt="Oop's"> -->
+
+        <nav class="navbar">
+            <a class="{% if request.path == '/' or request.path == '/home/'  %} active {% endif %}" href="/home">Home</a>
+            <a class="{% if request.path == '/about/' %} active {% endif %}" href="/about">About</a>
+            <a class="{% if request.path == '/services/' %} active {% endif %}" href="/services">Services</a>
+            <a class="{% if request.path == '/portfolio/' %} active {% endif %}" href="/portfolio">Portfolio</a>
+            <a class="{% if request.path == '/contact/' %} active {% endif %}" href="/contact">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>

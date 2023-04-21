@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+</head>
+<body>
+    <!-- footer design -->
+    <footer class="footer" id='footer'>
+        <div class="footer-text">
+            <p>Lorem ipsum &copy; dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home">
+                <img src="{% static 'icons/up-arrow.svg' %}" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

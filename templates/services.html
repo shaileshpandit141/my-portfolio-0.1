@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-continer">
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/code-alt.svg' %}" alt="">
+            <h3>Web Devloper!</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/bxs-paint.svg' %}" alt="">
+            <h3>Graphic Design</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+        <div class="services-box">
+            <img class="bx" src="{% static 'icons/bx-bar-chart-alt.svg' %}" alt="">
+            <h3>Digial Markating</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque rerum qui, aliquam commodi
+                illum beatae nobis voluptas excepturi ex?
+            </p>
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+    </div>
+</section>
+{% endblock content %}

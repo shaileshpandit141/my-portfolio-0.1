@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+ <!-- Home section design -->
+ <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Shailesh Pandit</h1>
+        <h3>And I'm a <span> Python Web Devloper</span></h3>
+        <p>
+            Aspiring Technical Python, Web and Rest API Developer | Seeking An Entry-Level Developer Position | 👨🏻‍💻 Proficiency With Linux, Python, Django, Rest APIs, Git and GitHub.
+        </p>
+        <!-- Social media icons -->
+        <div class="social-media">
+            <a href="">
+                <img src="{% static 'icons/twitter.svg' %}" class="logo" name="twitter">
+            </a>
+            <a href="https://instagram.com/panditjee__?igshid=ZDdkNTZiNTM=">
+                <img src="{% static 'icons/instagram-alt.svg' %}" class="logo" name="instagram-alt">
+            </a>
+            <a href="https://www.linkedin.com/in/shaileshpandit141">
+                <img src="{% static 'icons/linkedin.svg' %}" class="logo" name="linkedin">
+            </a>
+            <a href="https://github.com/shaileshpandit141">
+                <img src="{% static 'icons/github.svg' %}" class="logo" name="github">
+        </div>
+        <a href="" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="{% static 'images/bgimg.png' %}" alt="" />
+    </div>
+</section>
+{% endblock content %}

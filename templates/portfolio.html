@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Portfolio design -->
+<section class="portfolio " id="portfolio">
+    <h2 class="heading">Latest<span>project</span></h2>
+    <div class="portfolio-continer">
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/1.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Clone YouTube.com 2023</h4>
+                <p>Check out my latest project: Cloning YouTube.com with HTML and CSS!.</p>
+                <a href="https://shaileshpandit141.github.io/Clone-YouTube.com-2023/">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/2.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Python Assignments Mastered</h4>
+                <p>Python Assignments Mastered: Check out Our Completed Assignments Uploaded on GitHub!.</p>
+                <a href="https://github.com/shaileshpandit141/Python-Assignments-Mastered">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/3.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Python Exercises 2023</h4>
+                <p>Check out my latest python exercises repository.</p>
+                <a href="https://github.com/shaileshpandit141/PythonExercises2023">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/4.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Define Variable in Python</h4>
+                <p>How to define variable in python? | page design by using HTML and CSS.</p>
+                <a href="https://github.com/shaileshpandit141/define-variable-in-python">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/5.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Login-page</h4>
+                <p>It is an efficiently designed and responsive login page in #HTML and #CSS.</p>
+                <a href="https://github.com/shaileshpandit141/Login-page">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/6.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+{% endblock content %}
