@@ -33,7 +33,7 @@ section {
 }
 
 section:nth-child(odd),
-section:nth-child(odd) {
+section:nth-child(even) {
     border-bottom: .22rem dotted lightgray;
 }
 
