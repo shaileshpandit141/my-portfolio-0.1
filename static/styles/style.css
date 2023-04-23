@@ -32,9 +32,11 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+section:nth-child(odd),
 section:nth-child(odd) {
-    background-color: #323946;
+    border-bottom: .22rem dotted lightgray;
 }
+
 
 .header {
     position: fixed;
@@ -82,21 +84,9 @@ section:nth-child(odd) {
     align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
     .home {
         flex-direction: column;
-    } 
-}
-
-@media (min-width: 901px) and (max-width: 1329px) {
-    .home {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 1330px) {
-    .home {
-        flex-direction: row;
     } 
 }
 
@@ -108,27 +98,45 @@ section:nth-child(odd) {
     min-height:10vh;
     border-radius:  0 0 20px 0;
     border-bottom: 10px solid #230b0b;
-    transition: .3s;
+    transition: 3s;
 }
 
-.home-img:hover img {
-    transform: scale(1.08);
+@media (min-width: 1019px) {
+    .home-img:hover img {
+        transform: scale(1.1);
+    }
 }
 
+.about-continer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1019px) {
+    .about-continer {
+        flex-direction: row;
+    }
+}
+
+.about-img {
+    margin: 2rem;
+}
 
 .about-img img {
-    width: 20vw;
-    height: 20vw;
+    width: 35rem;
+    height: 35rem;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 8rem 1rem;
     cursor: pointer;
     border: 1px solid var(--main-color);
     background-color: #6a6a6a;
-    transition: .3s;
+    transition: 3s;
 }
 
-.about-img:hover img {
-    transform: scale(1.04);
+@media (max-width: 1019px) {
+    .about-img img:hover {
+        transform: scale(1.1);
+    }
 }
 
 .home-content h3 {
@@ -152,12 +160,17 @@ span {
     line-height: 1;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .home-content p {
     font-size: 1.7rem;
     word-spacing: 2px;
     line-height: 20px;
+    max-width: 80rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
+
 }
 
 
@@ -202,6 +215,7 @@ span {
    letter-spacing: .1rem;
    font-weight: bold;
    transition: 0.3s;
+   margin-bottom: 3rem;
 }
 
 .btn:hover {
@@ -358,7 +372,6 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +379,7 @@ span {
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .3s ease;
+    transition: .5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
